@@ -1,10 +1,14 @@
 ﻿using System;
-using GrabTemplate.Common.Models;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
-namespace GrabTemplate.Domain
+namespace GrabTemplate.DTOs
 {
-    public class SysUser : EntityIdentity
+    public class SysUserDTO
     {
+        public int Id { get; set; }
+        public string Email { get; set; }
         public string Name { get; set; }
         public string Password { get; set; }
         public DateTime CreatedDate { get; set; }

@@ -4,4 +4,14 @@
     <TargetFramework>netcoreapp2.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="6.0.0" />
+    <PackageReference Include="MediatR" Version="5.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\GrabTemplate.Domain\GrabTemplate.Domain.csproj" />
+    <ProjectReference Include="..\GrabTemplate.Infrastructure\GrabTemplate.Infrastructure.csproj" />
+  </ItemGroup>
+
 </Project>

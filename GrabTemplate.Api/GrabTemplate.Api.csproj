@@ -7,12 +7,24 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Folder Include="Misc\AutoMapper\" />
     <Folder Include="wwwroot\" />
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="6.0.0" />
+    <PackageReference Include="BCrypt.Net-Next" Version="3.1.0" />
+    <PackageReference Include="ksemenenko.ColorThief" Version="1.1.1.4" />
+    <PackageReference Include="MediatR" Version="5.1.0" />
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.0.1916590" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\GrabTemplate.Common\GrabTemplate.Common.csproj" />
+    <ProjectReference Include="..\GrabTemplate.Core\GrabTemplate.Core.csproj" />
+    <ProjectReference Include="..\GrabTemplate.Domain\GrabTemplate.Domain.csproj" />
+    <ProjectReference Include="..\GrabTemplate.Infrastructure\GrabTemplate.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>
